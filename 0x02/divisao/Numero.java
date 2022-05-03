@@ -3,8 +3,6 @@
 public class Numero {
     public static void dividir(int a, int b){
         float c = 0;
-/*        float d = (float) a;
-        float e = (float) b;*/
         try{
             c = a/b;
         }
