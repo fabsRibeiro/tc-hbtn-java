@@ -1,5 +1,3 @@
-
-
 public class Departamento {
 
     public double valorMeta;
