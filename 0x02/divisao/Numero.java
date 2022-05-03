@@ -8,7 +8,7 @@ public class Numero {
             System.out.println("Nao eh possivel dividir por zero");
         }
         finally {
-            System.out.printf( a + " / " + b + " = %.0f \n", c);
+            System.out.printf( a + " / " + b + " = %.0f\n", c);
         }
     }
 }
