@@ -1,4 +1,3 @@
-
 import exceptions.AutorInvalidoException;
 import exceptions.LivroInvalidoException;
 
