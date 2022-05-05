@@ -19,7 +19,7 @@ public class PersonagemGame {
         if(saudeAtual >= 100){
             setSaudeAtual(100);
         } else {
-            setSaudeAtual(quantidadeDeCura);
+            setSaudeAtual(getSaudeAtual() + quantidadeDeCura);
         }
         return saudeAtual;
     }
