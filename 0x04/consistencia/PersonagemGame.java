@@ -1,5 +1,4 @@
 
-
 public class PersonagemGame {
     private int saudeAtual;
     private String nome;
@@ -36,10 +35,9 @@ public class PersonagemGame {
     }
 
     public void setSaudeAtual(int saudeAtual) {
-        if(getSaudeAtual() > 0){
+        if(saudeAtual > 0){
             status = "vivo";
-        }
-        if(getSaudeAtual() <= 0){
+        } else if(saudeAtual <= 0){
             status = "morto";
         }
         this.saudeAtual = saudeAtual;
