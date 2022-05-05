@@ -16,11 +16,12 @@ public class PersonagemGame {
 
     public int receberCura(int quantidadeDeCura){
         saudeAtual = getSaudeAtual() + quantidadeDeCura;
-        if(saudeAtual >= 100){
+        if(getSaudeAtual() > 100){
             setSaudeAtual(100);
         } else {
-            setSaudeAtual(getSaudeAtual() + quantidadeDeCura);
+            setSaudeAtual(getSaudeAtual());
         }
+
         return saudeAtual;
     }
 
