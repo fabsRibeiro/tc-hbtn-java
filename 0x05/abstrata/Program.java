@@ -4,7 +4,7 @@ import java.lang.reflect.Modifier;
 public class Program {
     public static void main(String[] args) {
         try {
-            if (Modifier.isAbstract(quadrado.FormaGeometrica.class.getDeclaredMethod("area").getModifiers()))
+            if (Modifier.isAbstract(FormaGeometrica.class.getDeclaredMethod("area").getModifiers()))
                 System.out.println("area() eh uma funcao abstrata");
             else
                 System.out.println("area() nao eh uma funcao abstrata");
