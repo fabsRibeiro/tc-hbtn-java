@@ -1,12 +1,12 @@
-
+package metodos;
 public class PersonagemGame {
 
     private int saudeAtual;
     private String nome;
 
-    public int tomarDano(int quantidadeDano){
-       saudeAtual = getSaudeAtual() - quantidadeDano;
-       if(quantidadeDano > saudeAtual){
+    public int tomarDano(int quantidadeDeDano){
+       saudeAtual = getSaudeAtual() - quantidadeDeDano;
+       if(quantidadeDeDano > saudeAtual){
            setSaudeAtual(0);
        } else {
            setSaudeAtual(saudeAtual);
@@ -15,7 +15,7 @@ public class PersonagemGame {
     }
 
     public int receberCura(int quantidadeDeCura){
-        saudeAtual = getSaudeAtual() + quantidadeDeCura;
+        setSaudeAtual(saudeAtual + quantidadeDeCura);
         if(saudeAtual >= 100){
             setSaudeAtual(100);
         } else {
