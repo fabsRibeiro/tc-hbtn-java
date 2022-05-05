@@ -1,7 +1,5 @@
 
 
-import quadrado.FormaGeometrica;
-
 import java.lang.reflect.Modifier;
 
 public class Program {
