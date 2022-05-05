@@ -2,8 +2,9 @@
 
 public class PersonagemGame {
 
-    privado String nome;
-    privado int saudeAtual;
+    private int saudeAtual;
+    private String nome;
+
 
     public int getSaudeAtual() {
         return saudeAtual;
