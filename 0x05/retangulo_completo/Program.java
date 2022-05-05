@@ -1,9 +1,6 @@
 
-import java.util.Locale;
-
 public class Program {
     public static void main(String[] args) {
-        Locale.setDefault(new Locale("pt", "BR"));
         Retangulo retangulo = new Retangulo();
         retangulo.setLargura(7);
         retangulo.setAltura(4);
