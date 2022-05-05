@@ -1,4 +1,4 @@
-package metodos;
+
 public class PersonagemGame {
 
     private int saudeAtual;
