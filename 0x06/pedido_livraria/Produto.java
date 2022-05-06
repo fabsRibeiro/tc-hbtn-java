@@ -1,4 +1,4 @@
-package pedido_livraria.produtos;
+package pedido_livraria;
 
 public abstract class Produto {
 
