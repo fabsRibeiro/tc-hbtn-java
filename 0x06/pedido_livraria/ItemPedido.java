@@ -1,4 +1,4 @@
-
+import produtos.*;
 public class ItemPedido {
 
     private int quantidade;
