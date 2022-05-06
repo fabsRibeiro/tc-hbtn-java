@@ -1,4 +1,4 @@
-package .produtos;
+package pedido_livraria.produtos;
 public class Program {
 
     public static void main(String[] args) {
