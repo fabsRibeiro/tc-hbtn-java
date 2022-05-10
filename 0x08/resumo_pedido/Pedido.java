@@ -1,4 +1,5 @@
-import provedores.;
+
+import provedores.*;
 public class Pedido {
 
     private int codigo;
@@ -16,7 +17,7 @@ public class Pedido {
         return codigo;
     }
 
-    public void setCodigo(double codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
