@@ -1,12 +1,12 @@
-import provedores.*;
+import provedores.;
 public class Pedido {
 
     private int codigo;
-    private int peso;
+    private double peso;
     private double total;
     private Frete frete;
 
-    public Pedido(int codigo, int peso, double total) {
+    public Pedido(int codigo, double peso, double total) {
         this.codigo = codigo;
         this.peso = peso;
         this.total = total;
