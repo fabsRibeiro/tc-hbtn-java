@@ -1,4 +1,4 @@
-
+package provedores;
 public class Frete {
 
     public double valor;
