@@ -16,7 +16,7 @@ public class Empregado {
         System.out.println("Nome: " + this.getNome());
         System.out.println("Bairro: " + this.endereco.getBairro());
         System.out.println("Cidade: " + this.endereco.getCidade());
-        System.out.println("Pais: " + this.endereco.getPais());
+        System.out.printf("Pais: " + this.endereco.getPais());
     }
 
     public String getNome() {
