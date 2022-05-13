@@ -1,5 +1,4 @@
 
-
 import java.util.List;
 
 public class ManipularArrayNumeros {
@@ -11,7 +10,7 @@ public class ManipularArrayNumeros {
                 return i;
             }
         }
-        return -1; //numero nao encontrado
+        return -1;
     }
 
     public static void adicionarNumero(List<Integer> numeros, int numero) {
@@ -31,17 +30,17 @@ public class ManipularArrayNumeros {
             if(buscarPosicaoNumero(numeros, numero) == -1) {
                 throw new Exception();
             }
+            numeros.remove(buscarPosicaoNumero(numeros, numero));
         } catch (Exception e){
             System.out.println("Numero nao encontrado na lista");
         }
-        numeros.remove(buscarPosicaoNumero(numeros, numero));
     }
 
     public static void substituirNumero(List<Integer> numeros, int numero, int substituto) {
-        if(buscarPosicaoNumero(numeros, numero) == -1){
+        if(buscarPosicaoNumero(numeros, numero) != -1){
+            removerNumero(numeros, numero);
             numeros.add(substituto);
         } else {
-            removerNumero(numeros, numero);
             numeros.add(substituto);
         }
     }
