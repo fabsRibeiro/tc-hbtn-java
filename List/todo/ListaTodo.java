@@ -24,7 +24,7 @@ public class ListaTodo {
                 }
                 tarefas.add(tarefa);
             } catch (IllegalArgumentException e){
-                System.out.printf("Tarefa com identificador " + tarefa.getIdentificador() + " ja existente na lista");
+                System.out.println("Tarefa com identificador " + tarefa.getIdentificador() + " ja existente na lista");
                 tarefas.clear();
             }
         }
