@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class ListaTodo {
 
@@ -23,7 +24,7 @@ public class ListaTodo {
                 }
                 tarefas.add(tarefa);
             } catch (Exception e){
-                System.out.println("Tarefa com identificador " + tarefa.getIdentificador() + " ja existente na lista");
+                System.out.printf("Tarefa com identificador " + tarefa.getIdentificador() + " ja existente na lista");
                 tarefas.clear();
             }
         }

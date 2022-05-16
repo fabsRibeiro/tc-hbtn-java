@@ -16,7 +16,7 @@ public class Tarefa {
                 throw new Exception();
             }
         }catch (Exception e){
-            System.out.println("Descricao de tarefa invalida");
+            System.out.printf("Descricao de tarefa invalida");
         }
     }
 
