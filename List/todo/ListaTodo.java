@@ -19,11 +19,11 @@ public class ListaTodo {
             try {
                 for(Tarefa novaTarefa : tarefas){
                     if(tarefa.getIdentificador() == novaTarefa.getIdentificador()){
-                        throw new Exception();
+                        throw new IllegalArgumentException();
                     }
                 }
                 tarefas.add(tarefa);
-            } catch (Exception e){
+            } catch (IllegalArgumentException e){
                 System.out.printf("Tarefa com identificador " + tarefa.getIdentificador() + " ja existente na lista");
                 tarefas.clear();
             }
