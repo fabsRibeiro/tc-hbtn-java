@@ -13,7 +13,7 @@ public class Tarefa {
     public void modificarDescricao(){
         try{
             if(descricao == null || descricao == ""){
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("Descricao de tarefa invalida\n");
             }
         }catch (IllegalArgumentException e){
             System.out.printf("Descricao de tarefa invalida\n");
