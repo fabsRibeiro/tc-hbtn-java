@@ -16,7 +16,7 @@ public class Tarefa {
                 throw new IllegalArgumentException();
             }
         }catch (IllegalArgumentException e){
-            System.out.println("Descricao de tarefa invalida");
+            System.out.printf("Descricao de tarefa invalida\n");
         }
     }
 
