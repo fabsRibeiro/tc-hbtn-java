@@ -5,7 +5,7 @@ public class AnalisadorFrase {
 
     public static TreeMap contagemPalavras(String texto){
         String[] palavras = texto.split("\\ ");
-        TreeMap<String,Integer> palavrasSeparadas = new TreeMap<>();
+        TreeMap<String,Integer> palavrasSeparadas = new TreeMap<String,Integer>();
         for(String palavra1 : palavras){
             palavra1 = palavra1.toLowerCase();
             palavra1 = palavra1.replaceAll("\\?", "");
