@@ -1,10 +1,11 @@
 
+import java.util.HashSet;
 import java.util.TreeSet;
 
 public class NumerosDuplicados {
 
     public static TreeSet<Integer> buscar(int[] inteiros){
-        TreeSet<Integer> semRepeticao = new TreeSet<>();
+        HashSet<Integer> semRepeticao = new HashSet<>();
         TreeSet<Integer> resultado = new TreeSet<>();
 
         for(int numero1 : inteiros) {
