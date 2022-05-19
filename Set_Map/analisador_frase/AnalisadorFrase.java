@@ -1,5 +1,4 @@
 
-
 import java.util.TreeMap;
 
 public class AnalisadorFrase {
@@ -24,8 +23,6 @@ public class AnalisadorFrase {
                 }
             }
         }
-
         return palavrasSeparadas;
     }
-
 }
