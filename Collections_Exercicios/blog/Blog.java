@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Blog {
 
-    ArrayListList<Post> posts = new ArrayList<>();
+    ArrayList<Post> posts = new ArrayList<>();
 
     public void adicionarPostagem(Post post){
         posts.add(post);
