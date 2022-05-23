@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Blog {
 
-    private List<Post> postagens;
+    private static List<Post> postagens;
 
     public Blog() {
         this.postagens = new ArrayList<>();
@@ -13,16 +13,16 @@ public class Blog {
         postagens.add(post);
     }
 
-    public Set<String> obterTodosAutores(){
-        Set<String> autores = new TreeSet();
+    public static Set<String> obterTodosAutores(){
+        Set<String> autores = new TreeSet<String>();
         for(Post pots : postagens){
             autores.add(pots.getAutor());
         }
         return autores;
     }
 
-    public Map<String, Integer> obterContagemPorCategoria(){
-        Map<String, Integer> contagem = new TreeMap();
+    public static Map<String, Integer> obterContagemPorCategoria(){
+        Map<String, Integer> contagem = new TreeMap<String, Integer>();
         int devOps = 0;
         int dev = 0;
         for(Post post : postagens){
