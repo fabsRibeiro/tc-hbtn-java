@@ -1,9 +1,13 @@
-
+package blog;
 import java.util.*;
 
 public class Blog {
 
-    List<Post> postagens = new List<>();
+    private List<Post> postagens;
+
+    public Blog() {
+        this.postagens = new ArrayList<>();
+    }
 
     public void adicionarPostagem(Post post){
         postagens.add(post);
