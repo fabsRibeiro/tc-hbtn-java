@@ -3,15 +3,15 @@ import java.util.*;
 
 public class Blog {
 
-    ArrayList<Post> posts = new ArrayList<>();
+    ArrayList<Post> postagens = new ArrayList<>();
 
     public void adicionarPostagem(Post post){
-        posts.add(post);
+        postagens.add(post);
     }
 
     public Set<String> obterTodosAutores(){
         Set<String> autores = new TreeSet();
-        for(Post pots : posts){
+        for(Post pots : postagens){
             autores.add(pots.getAutor());
         }
         return autores;
@@ -21,7 +21,7 @@ public class Blog {
         Map<String, Integer> contagem = new TreeMap();
         int devOps = 0;
         int dev = 0;
-        for(Post post : posts){
+        for(Post post : postagens){
             if(post.getCategoria().equals("DevOps")){
                 devOps += 1;
                 if(devOps != 0){
