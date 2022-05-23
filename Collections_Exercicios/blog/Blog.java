@@ -3,11 +3,7 @@ import java.util.*;
 
 public class Blog {
 
-    private ArrayList<Post> posts;
-
-    public Blog() {
-        this.posts = new ArrayList<>();
-    }
+    List<Post> posts = new ArrayList<>();
 
     public void adicionarPostagem(Post post){
         posts.add(post);
@@ -22,7 +18,7 @@ public class Blog {
     }
 
     public Map<String, Integer> obterContagemPorCategoria(){
-        Map contagem = new TreeMap();
+        Map<String, Integer> contagem = new TreeMap();
         int devOps = 0;
         int dev = 0;
         for(Post post : posts){
