@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Biblioteca<T> {
+public class Biblioteca<T> extends Midia{
 
     List<T> valores = new ArrayList<>();
 
