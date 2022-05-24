@@ -28,7 +28,7 @@ public class Blog {
     }
 
     public Set<Autor> obterTodosAutores(){
-        Set<Autor> autores = new HashSet<Autor>();
+        Set<Autor> autores = new TreeSet<Autor>();
         postagens.stream().forEach(postagem->{
             autores.add(postagem.getAutor());
         });
@@ -64,7 +64,7 @@ public class Blog {
     }
 
     public Set<Post> obterPostsPorCategoria(Categorias categoria){
-        HashSet<Post> categoriasPost = new HashSet<Post>();
+        TreeSet<Post> categoriasPost = new TreeSet<Post>();
         for(Post post : postagens){
             if(post.getCategoria().equals(categoria)){
                 categoriasPost.add(post);
