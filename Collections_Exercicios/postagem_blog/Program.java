@@ -1,7 +1,5 @@
 
-
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Program {
     public static void main(String[] args) {

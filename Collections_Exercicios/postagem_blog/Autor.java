@@ -1,5 +1,4 @@
 
-
 public class Autor implements Comparable<Autor>{
 
     private String nome;
