@@ -1,3 +1,4 @@
+package armazem;
 
 public interface Armazenavel<T> {
 
