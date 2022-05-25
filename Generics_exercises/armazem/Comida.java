@@ -39,7 +39,7 @@ public class Comida {
 
     @Override
     public String toString() {
-        DecimalFormat df = new DecimalFormat("#.000000");
+        DecimalFormat df = new DecimalFormat("####.000000");
         String n = df.format(preco);
         Double ca = Double.valueOf(calorias);
         String c = df.format(ca);
