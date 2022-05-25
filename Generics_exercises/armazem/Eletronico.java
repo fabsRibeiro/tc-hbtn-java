@@ -1,12 +1,10 @@
 
-import java.text.DecimalFormat;
-
 public class Eletronico<T> {
 
     private String descricao;
-    private T valor;
+    private double valor;
 
-    public Eletronico(String descricao, T valor) {
+    public Eletronico(String descricao, double valor) {
         this.descricao = descricao;
         this.valor = valor;
     }
@@ -19,19 +17,18 @@ public class Eletronico<T> {
         this.descricao = descricao;
     }
 
-    public T getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(T valor) {
+    public void setValor(double valor) {
 
         this.valor = valor;
     }
 
     @Override
     public String toString() {
-        DecimalFormat df = new DecimalFormat("#.000000");
-        String n = df.format(getValor());
-        return String.format("[%s] R$ %s" , descricao, n);
+
+        return String.format("[%s] R$ %f" , descricao, valor);
     }
 }

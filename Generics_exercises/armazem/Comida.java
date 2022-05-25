@@ -1,13 +1,12 @@
-
-import java.text.DecimalFormat;
+package armazem;
 
 public class Comida {
 
     private String nome;
-    private int calorias;
-    private Double preco;
+    private double calorias;
+    private double preco;
 
-    public Comida(String nome, int calorias, Double preco) {
+    public Comida(String nome, int calorias, double preco) {
         this.nome = nome;
         this.calorias = calorias;
         this.preco = preco;
@@ -21,28 +20,25 @@ public class Comida {
         this.nome = nome;
     }
 
-    public int getCalorias() {
+    public double getCalorias() {
         return calorias;
     }
 
-    public void setCalorias(int calorias) {
+    public void setCalorias(double calorias) {
         this.calorias = calorias;
     }
 
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
     @Override
     public String toString() {
-        DecimalFormat df = new DecimalFormat("####.000000");
-        String n = df.format(preco);
-        String c = df.format(Double.valueOf(calorias));
 
-        return String.format("[%s] %s R$ %s" , nome, c, n);
+        return String.format("[%s] %f R$ %f" , nome, calorias, preco);
     }
 }
