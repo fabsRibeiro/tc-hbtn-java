@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Armazem<T> implements Armazenavel<T>{
 
-    Map<String, T> lista = new HashMap<String, T>();
+    HashMap<String, T> lista = new HashMap<String, T>();
 
     @Override
     public void adicionarAoInventario(String nome, T valor) {
