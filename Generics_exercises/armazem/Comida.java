@@ -41,7 +41,7 @@ public class Comida {
     public String toString() {
         DecimalFormat df = new DecimalFormat("#.000000");
         String n = df.format(preco);
-        Double ca = new Double(calorias);
+        Double ca = Double.valueOf(calorias);
         String c = df.format(ca);
 
         return String.format("[%s] %s R$ %s" , nome, c, n);
