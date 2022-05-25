@@ -31,7 +31,7 @@ public class Eletronico<T> {
     @Override
     public String toString() {
         DecimalFormat df = new DecimalFormat("#.000000");
-        String n = df.format(valor);
+        String n = df.format(getValor());
         return String.format("[%s] R$ %s" , descricao, n);
     }
 }
