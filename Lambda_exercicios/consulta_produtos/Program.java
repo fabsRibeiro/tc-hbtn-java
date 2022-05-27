@@ -1,5 +1,5 @@
 
-import Produto;
+import consulta_produtos.Produto.*;
 
 import java.util.*;
 import java.util.function.*;
