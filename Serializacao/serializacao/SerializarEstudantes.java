@@ -25,11 +25,12 @@ public class SerializarEstudantes<Estudante> {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public List<Estudante> desserializar(){
         try {
             FileInputStream fis = new FileInputStream(nomeArquivo);
             ObjectInputStream ois = new ObjectInputStream(fis);
-            List<Estudante> estudantes = (List<Estudante>)ois.readObject();
+            List<Estudante> estudantes = (List<Estudante>) ois.readObject();
             ois.close();
             return estudantes;
 
