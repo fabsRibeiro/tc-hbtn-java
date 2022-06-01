@@ -21,7 +21,7 @@ public class SerializarEstudantes<Estudante> {
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Nao foi possivel serializar");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Nao foi possivel serializar");
         }
     }
 
@@ -34,11 +34,11 @@ public class SerializarEstudantes<Estudante> {
             return estudantes;
 
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Nao foi possivel desserializar");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Nao foi possivel desserializar");
         } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Nao foi possivel desserializar");
         }
     }
 }
