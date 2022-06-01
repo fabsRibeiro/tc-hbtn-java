@@ -1,6 +1,7 @@
 
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SerializarEstudantes<Estudante> {
@@ -26,20 +27,18 @@ public class SerializarEstudantes<Estudante> {
     }
 
     @SuppressWarnings("unchecked")
-    public List<Estudante> desserializar(){
+    public List<Estudante> desserializar() {
+        List<Estudante> estudantes = new ArrayList<>();
         try {
             FileInputStream fis = new FileInputStream(nomeArquivo);
             ObjectInputStream ois = new ObjectInputStream(fis);
-            List<Estudante> estudantes = (List<Estudante>) ois.readObject();
+            estudantes = (List<Estudante>) ois.readObject();
             ois.close();
             return estudantes;
 
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException("Nao foi possivel desserializar");
-        } catch (IOException e) {
-            throw new RuntimeException("Nao foi possivel desserializar");
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException("Nao foi possivel desserializar");
+        } catch (Exception e) {
+            System.out.println("Nao foi possivel desserializar");
         }
+        return estudantes;
     }
 }
